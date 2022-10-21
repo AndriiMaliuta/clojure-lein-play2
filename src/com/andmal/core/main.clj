@@ -1,0 +1,4 @@
+
+;(clojure.main)
+
+(println "Hello")
