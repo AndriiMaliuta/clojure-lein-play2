@@ -1,4 +1,4 @@
-(ns com.andmal.http_uni
+(ns com.andmal.web.http_uni
   (:import (com.mashape.unirest.http Unirest)
            (com.mashape.unirest.request.body Body)))
 

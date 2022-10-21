@@ -1,4 +1,4 @@
-(ns funcs)
+(ns com.andmal.core.funcs)
 
 (defn add [x y]
   (+ x y))
