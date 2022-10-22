@@ -1,4 +1,4 @@
-(ns clojure-play2.core-test
+(ns com.andmal.core-test
   (:require [clojure.test :refer :all]
             [clojure-play2.core :refer :all]))
 
