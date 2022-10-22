@@ -1,4 +1,4 @@
-(ns ifs1)
+(ns com.andmal.core.ifs1)
 
 (def x 3)
 (cond

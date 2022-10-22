@@ -1,4 +1,4 @@
-(ns one)
+(ns com.andmal.core.one)
 
 (str "Hello, " "there!")
 (println str "Hello, " "World!")

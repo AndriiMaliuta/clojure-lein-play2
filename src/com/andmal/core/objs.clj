@@ -1,4 +1,4 @@
-(ns com.andmal.objs)
+(ns com.andmal.core.objs)
 
 (def person {:name "Ihnat" :age 30})
 

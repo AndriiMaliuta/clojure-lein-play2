@@ -1,4 +1,4 @@
-(ns com.andmal.recs)
+(ns com.andmal.core.recs)
 
 (defrecord Animal [name age color] )
 (def simba (Animal. "Simba" 5 "white and black"))
