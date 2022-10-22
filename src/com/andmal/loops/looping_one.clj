@@ -26,11 +26,10 @@
   (* x1 x2))
 ;;=> (1 2 3 2 4 6 3 6 9)
 
-
 ;; === with run!
 (run! println [1 2 3 4 5])
 
-;(def nums2 (map +3 nums))
+;(def nums2 (map #(rem n %) nums))
 (def nums2 [2, 3, 4, 5, 6])
 
 ;; with doseq

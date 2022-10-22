@@ -3,4 +3,8 @@
 ;(dotimes [n 10]
 ;  (println (map #(* % (inc n)) (range 1 11))))
 
-(dotimes [x 10] (println x))
+;(dotimes [x 10] (println x))
+
+(dorun (map #(println "hi" %) ["mum" "dad" "sister"]))
+
+; (dorun (map #(db/insert :person {:name %}) ["Fred" "Ethel" "Lucy" "Ricardo"]))
