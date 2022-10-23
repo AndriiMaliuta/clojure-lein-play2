@@ -1,8 +1,8 @@
 (ns com.andmal.db.dbs
   (:import (java.sql DriverManager)))
 
-(defrecord Page [title body created_at edited_at])
-(defstruct page_struct :title :body :created_at :edited_at)
+(defrecord Page [title body created_at last_updated])
+(defstruct page_struct :title :body :created_at :last_updated)
 
 (def ALL_PAGES "select * from pages")
 (def PAGE_BY_TITLE "select * from pages where title = ?")
@@ -23,11 +23,14 @@
                                    (.getString rs "title")
                                    (.getString rs "body")
                                    (.getString rs "created_at")
-                                   (.getString rs "edited_at"))))
+                                   (.getString rs "last_updated"))))
   (def page_r (Page. (.getString rs "title")
                      (.getString rs "body")
                      (.getString rs "created_at")
-                     (.getString rs "edited_at")))
+                     (.getString rs "last_updated")))
   )
 
-(println (count pages))
+(println (str "> pages count: " count pages))
+
+(doseq [p pages]
+  {println p})
